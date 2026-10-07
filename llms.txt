@@ -14,7 +14,7 @@ Key facts:
 
 ## Events
 
-- The First Workshop on Multimodal, Multilingual, and Multicultural Mental Health and Psychotherapy, co-located with AACL 2026
+- [MultiPsyche](https://sites.google.com/view/multipsyche/home): The First Workshop on Multimodal, Multilingual, and Multicultural Mental Health and Psychotherapy, co-located with AACL 2026
 - [PsyDefDetect Shared Task](https://psydefdetect-shared-task.github.io): detecting and classifying psychological defense mechanisms in emotional support dialogues (DMRS framework), co-located with BioNLP@ACL 2026
 
 ## Projects

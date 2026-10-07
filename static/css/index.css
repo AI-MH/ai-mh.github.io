@@ -1618,7 +1618,6 @@ div.research-card { cursor: default; }
 .research-card .card-actions { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 2rem; }
 .research-card .card-actions .card-arrow { margin-top: 0; text-decoration: none; }
 .research-card .card-actions .card-arrow:hover { gap: 1.1rem; color: var(--accent-earth); }
-.card-status { margin-top: 2rem; font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-earth-dark); }
 
 /* Contributors */
 .people-grid {
