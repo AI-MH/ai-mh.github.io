@@ -1,305 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="title" content="AIMH - AI for Mental Health">
-  <meta name="description" content="AIMH is a research community dedicated to utilizing AI to advance mental health, focusing on NLP techniques and beyond.">
-  <meta name="keywords" content="AI, Mental Healthcare, NLP, Natural Language Processing, Computational Psychiatry, Artificial Intelligence, Research">
-  <meta name="author" content="AIMH Research Community">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
+  <title>AIMH: AI for Mental Health</title>
+  <meta name="description" content="AIMH is a research community using AI to empower mental health, with open datasets, language models and shared tasks grounded in clinical practice.">
+  <meta name="keywords" content="AIMH, AI for mental health, natural language processing, computational psychiatry, psychotherapy, counseling dialogue, MentalBERT, SQPsych, PsyDefConv">
+  <link rel="canonical" href="https://ai-mh.github.io/">
+
+  <!-- Open Graph / social previews -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AIMH Research Community">
-  <meta property="og:title" content="AIMH - AI for Mental Health">
-  <meta property="og:description" content="AIMH is a research community dedicated to utilizing AI to advance mental health, focusing on NLP techniques and beyond.">
+  <meta property="og:site_name" content="AIMH">
+  <meta property="og:title" content="AIMH: AI for Mental Health">
+  <meta property="og:description" content="AIMH is a research community using AI to empower mental health, with open datasets, language models and shared tasks grounded in clinical practice.">
+  <meta property="og:url" content="https://ai-mh.github.io/">
+  <meta property="og:image" content="https://ai-mh.github.io/static/images/logos/aimh.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AIMH: AI for Mental Health">
+  <meta name="twitter:description" content="AIMH is a research community using AI to empower mental health, with open datasets, language models and shared tasks grounded in clinical practice.">
+  <meta name="twitter:image" content="https://ai-mh.github.io/static/images/logos/aimh.png">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://ai-mh.github.io/#org",
+        "name": "AIMH",
+        "alternateName": "AI for Mental Health",
+        "url": "https://ai-mh.github.io/",
+        "logo": "https://ai-mh.github.io/static/images/logos/aimh.png",
+        "description": "AIMH is a research community using AI to empower mental health, with open datasets, language models and shared tasks grounded in clinical practice.",
+        "sameAs": [
+          "https://github.com/AI-MH",
+          "https://huggingface.co/AIMH"
+        ],
+        "knowsAbout": [
+          "Natural language processing for mental health",
+          "Computational psychiatry",
+          "Psychotherapy dialogue",
+          "Synthetic counseling conversations",
+          "Psychological defense mechanisms",
+          "Suicidal ideation detection"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ai-mh.github.io/#website",
+        "name": "AIMH",
+        "url": "https://ai-mh.github.io/",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://ai-mh.github.io/#org"
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" sizes="200x200" href="static/images/logos/aimh.png">
+  <link rel="apple-touch-icon" href="static/images/logos/aimh.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600&family=Noto+Sans&display=swap" rel="stylesheet">
 
-  
-  <meta name="theme-color" content="#2563eb">
-  
-  <title>AIMH - AI for Mental Health | Research Community</title>
-  
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="static/css/index.css">
+
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/site.js"></script>
 </head>
-<body>
 
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+<body class="landing">
 
-<main id="main-content">
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">AIMH: AI for Mental Health</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"></span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-                <span class="link-block">
-                <a href="https://discord.gg/AhuspeXNkM" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-discord"></i>
-                </span>
-                <span>Discord</span>
-              </a>
-            </span>
-            <span class="link-block">
-                <a href="https://huggingface.co/AIMH" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="ai ai-hugging-face"></i>
-                </span>
-                <span>Hugging Face</span>
-              </a>
-            </span>
-            <span class="link-block">
-                <a href="https://github.com/AI-MH" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>GitHub</span>
-              </a>
-            </span>
-        </div>
-      </div>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a class="site-nav-brand" href="index.html" aria-label="AIMH home"><img src="static/images/logos/aimh.png" alt="" class="site-nav-logo"></a>
+    <button class="site-nav-burger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav-menu"><span></span><span></span><span></span></button>
+    <div class="site-nav-menu" id="site-nav-menu">
+      <a class="site-nav-item" href="index.html#events">Events</a>
+      <a class="site-nav-item" href="index.html#works">Projects</a>
+      <a class="site-nav-item" href="index.html#contributors">Contributors</a>
+      <span class="site-nav-sep" aria-hidden="true"></span>
+      <a class="site-nav-icon" href="https://github.com/AI-MH" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i><span class="nav-label">GitHub</span></a>
+      <a class="site-nav-icon" href="https://huggingface.co/AIMH" target="_blank" title="Hugging Face" aria-label="Hugging Face"><span aria-hidden="true">🤗</span><span class="nav-label">Hugging Face</span></a>
+      <a class="site-nav-icon" href="https://discord.gg/AhuspeXNkM" target="_blank" title="Discord" aria-label="Discord"><i class="fab fa-discord"></i><span class="nav-label">Discord</span></a>
     </div>
-  </div>
-</div>
-</section>
+  </nav>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Our Mission</h2>
-        <div class="content has-text-justified">
-          <p>
-            AIMH (AI for Mental Health) is a research community dedicated to utilizing AI to advance mental health. 
-            Our work spans natural language processing and extends into broader AI applications, with a focus on developing innovative solutions for mental health challenges. Through rigorous research and open collaboration, we aim to bridge the gap between technology and clinical practice, ultimately improving outcomes for individuals worldwide. Join us on our journey to revolutionize mental health, connect with us on Discord and explore our latest findings.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Teaser -->
+  <header class="teaser">
+    <div class="teaser-shape teaser-shape-earth" aria-hidden="true"></div>
+    <div class="teaser-shape teaser-shape-sage" aria-hidden="true"></div>
 
-<section class="section is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Events</h2>
-    <div class="content" style="margin-top: 20px;">
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">The First Workshop on Multimodal, Multilingual, and Multicultural Mental Health and Psychotherapy</p>
-            <p class="subtitle is-6">Co-located with AACL 2026</p>
-            <div class="content">
-            Coming soon!
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">PsyDefDetect Shared Task</p>
-            <p class="subtitle is-6">Co-located with BioNLP@ACL 2026</p>
-            <div class="content">
-              Detecting and classifying psychological defense mechanisms in emotional support dialogues, grounded in the clinically validated Defense Mechanism Rating Scales (DMRS) framework.
-              <br><br>
-              <a href="https://psydefdetect-shared-task.github.io" class="button is-link is-outlined">View the Shared Task page</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Our Works</h2>
-    <div class="content" style="margin-top: 20px;">
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">PsyDefConv</p>
-            <p class="subtitle is-6"></p>
-            <div class="content">
-              We introduce PsyDefConv (Psychological Defense Mechanisms in Supportive Conversations), a dialogue corpus with help seeker utterances labeled for defense level, and DMRS Co-Pilot, a four-stage pipeline that provides evidence-based pre-annotations.
-              <br><br>
-              <a href="https://arxiv.org/abs/2512.15601" class="button is-link is-outlined">Check out the paper</a>
-              <a href="https://huggingface.co/datasets/AIMH/PsyDefConv" class="button is-link is-outlined">View on HuggingFace</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">SQPsych</p>
-            <p class="subtitle is-6">Structured Questionnaire-based Psychotherapy</p>
-            <div class="content">
-              Roleplaying with Structure: Synthetic Therapist-Client Conversation Generation from Questionnaires.
-              <br><br>
-              <a href="https://ai-mh.github.io/SQPsych.html" class="button is-link is-outlined">View the project page</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">SWMH Dataset</p>
-            <p class="subtitle is-6">Reddit SuicideWatch and Mental Health Collection</p>
-            <div class="content">
-              A comprehensive dataset collected from Reddit for mental health research.
-              <br><br>
-              <a href="https://huggingface.co/datasets/AIMH/SWMH" class="button is-link is-outlined" target="_blank">View on Hugging Face</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">MentalBERT</p>
-            <p class="subtitle is-6">Publicly Available Pretrained Language Models</p>
-            <div class="content">
-              A collection of encoder-only models pretrained for mental health applications.
-              <br><br>
-              <a href="https://huggingface.co/collections/AIMH/encoder-only-models-677bea397f53311900e5dd7b" class="button is-link is-outlined" target="_blank">View on Hugging Face</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Contributors</h2>
-    <p class="has-text-centered">Our research community comprises talented researchers from diverse institutions worldwide, including the ELLIS Institute Finland, University of Turku, University of Technology Sydney, Technical University of Darmstadt, Xi’an Jiaotong-Liverpool University, and The University of Manchester. These experts bring a wealth of knowledge in AI, NLP, and mental health.</p>
-    <div class="columns is-multiline is-centered" style="margin-top: 20px;">
-      
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://www.semanticscholar.org/author/Luna-Ansari/2135946025" target="_blank" class="has-text-link-dark">Luna Ansari</a></p>
-          <p class="subtitle is-6">Aalto University</p>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://shaoxiongji.github.io" target="_blank" class="has-text-link-dark">Shaoxiong Ji</a></p>
-          <p class="subtitle is-6">ELLIS Institute Finland & <br>University of Turku</p>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://hongbin-ze.github.io/" target="_blank" class="has-text-link-dark">Hongbin Na</a></p>
-          <p class="subtitle is-6">University of Technology Sydney</p>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://long21wt.github.io/" target="_blank" class="has-text-link-dark">Doan Nam Long Vu</a></p>
-          <p class="subtitle is-6">Technical University of Darmstadt</p>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://www.zimuwang.net/" target="_blank" class="has-text-link-dark">Zimu Wang</a></p>
-          <p class="subtitle is-6">Xi’an Jiaotong-Liverpool University</p>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <p class="title is-5"><a href="https://stevekgyang.github.io/" target="_blank" class="has-text-link-dark">Kailai Yang</a></p>
-          <p class="subtitle is-6">The University of Manchester</p>
-        </div>
-      </div>
-
-    </div>
-
-    <p class="has-text-centered is-size-7 has-text-grey" style="margin-top: 1rem;">
-      * Contributors are listed in alphabetical order by last name.
-    </p>
-
-    <div class="has-text-centered" style="margin-top: 3rem; padding: 2rem; border-top: 1px solid #dbdbdb;">
-      <h3 class="title is-4">Join Our Community</h3>
-      <p class="content">
-        We are always looking for passionate researchers and collaborators to join the AIMH community. 
-        Whether you are interested in AI, NLP, clinical psychology, or computational psychiatry, come say hi!
+    <div class="teaser-inner">
+      <img src="static/images/logos/aimh.png" alt="AIMH logo" class="teaser-logo">
+      <p class="teaser-eyebrow">AIMH &middot; AI for Mental Health</p>
+      <h1 class="teaser-title">
+        Using AI to empower
+        <span class="teaser-rotator" aria-hidden="true"><span class="teaser-word" data-words='["mental health","mielenterveys","psychische Gesundheit","心理健康","santé mentale","salud mental","मानसिक स्वास्थ्य","メンタルヘルス","sức khỏe tâm thần","mental health"]'>mental health</span></span><span class="sr-only">mental health</span>
+      </h1>
+      <p class="teaser-lede">
+        A research community building natural language processing and broader AI methods for mental health,
+        with open datasets, models and shared tasks grounded in clinical practice.
       </p>
-      <div class="buttons is-centered">
-        <a href="#" class="button is-dark is-rounded">
-          <span class="icon"><i class="fab fa-discord"></i></span>
-          <span>Join our Discord</span>
+
+      <div class="teaser-actions">
+        <a href="#works" class="btn-primary">Explore our work</a>
+        <a href="#events" class="btn-secondary">Events</a>
+      </div>
+
+      <div class="teaser-social">
+        <span class="teaser-social-label">Follow us</span>
+        <a href="https://huggingface.co/AIMH" target="_blank" class="cta-button cta-hf"><span aria-hidden="true">🤗</span>&nbsp; Hugging Face</a>
+        <a href="https://github.com/AI-MH" target="_blank" class="cta-button cta-github"><i class="fab fa-github"></i>&nbsp; GitHub</a>
+        <a href="https://discord.gg/AhuspeXNkM" target="_blank" class="cta-button cta-discord"><i class="fab fa-discord"></i>&nbsp; Discord</a>
+        <a href="https://olaresearch.org" target="_blank" class="cta-button cta-ola"><img src="static/images/logos/olaresearch.svg" alt="" class="cta-logo">Omni Language AI Research</a>
+      </div>
+    </div>
+
+    <!-- Research topics, drifting past -->
+    <div class="lang-marquee" aria-hidden="true">
+      <div class="lang-track topic-track">
+        <span>Psychotherapy</span><span>Counseling dialogue</span><span>Defense mechanisms</span><span>Suicide risk</span><span>Depression</span><span>Emotional support</span><span>Clinical NLP</span><span>Questionnaires</span><span>Synthetic data</span><span>Computational psychiatry</span><span>Wellbeing</span><span>Multilingual</span>
+        <span>Psychotherapy</span><span>Counseling dialogue</span><span>Defense mechanisms</span><span>Suicide risk</span><span>Depression</span><span>Emotional support</span><span>Clinical NLP</span><span>Questionnaires</span><span>Synthetic data</span><span>Computational psychiatry</span><span>Wellbeing</span><span>Multilingual</span>
+      </div>
+      <div class="lang-track topic-track lang-track-reverse">
+        <span>mielenterveys</span><span>psychische Gesundheit</span><span>心理健康</span><span>santé mentale</span><span>salud mental</span><span>मानसिक स्वास्थ्य</span><span>メンタルヘルス</span><span>sức khỏe tâm thần</span><span>salute mentale</span><span>정신 건강</span><span>saúde mental</span><span>psykisk hälsa</span>
+        <span>mielenterveys</span><span>psychische Gesundheit</span><span>心理健康</span><span>santé mentale</span><span>salud mental</span><span>मानसिक स्वास्थ्य</span><span>メンタルヘルス</span><span>sức khỏe tâm thần</span><span>salute mentale</span><span>정신 건강</span><span>saúde mental</span><span>psykisk hälsa</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section landing-section" id="about">
+    <div class="container editorial-grid">
+      <div class="editorial-text reveal">
+        <p class="section-eyebrow">Our mission</p>
+        <h2 class="title is-2">Bridging the gap between technology and clinical practice.</h2>
+        <p>
+          AIMH (AI for Mental Health) is a research community dedicated to utilizing AI to empower mental health.
+          Our work spans natural language processing and extends into broader AI applications, with a focus on
+          developing innovative solutions for mental health challenges.
+        </p>
+        <p>
+          Through rigorous research and open collaboration, we aim to bridge the gap between technology and clinical
+          practice, ultimately improving outcomes for individuals worldwide. Join us on
+          <a href="https://discord.gg/AhuspeXNkM" target="_blank">Discord</a> and explore our latest datasets and
+          models on <a href="https://huggingface.co/AIMH" target="_blank">Hugging Face</a>.
+        </p>
+      </div>
+      <div class="editorial-visual reveal" aria-hidden="true">
+        <div class="globe">
+          <div class="globe-ring globe-ring-1"></div>
+          <div class="globe-ring globe-ring-2"></div>
+          <div class="globe-ring globe-ring-3"></div>
+          <img src="static/images/logos/aimh.png" alt="" class="globe-core">
+          <span class="globe-tag" style="--a: 0deg;">Psychotherapy</span>
+          <span class="globe-tag" style="--a: 60deg;">Counseling</span>
+          <span class="globe-tag" style="--a: 120deg;">Depression</span>
+          <span class="globe-tag" style="--a: 180deg;">Suicide risk</span>
+          <span class="globe-tag" style="--a: 240deg;">Defense mechanisms</span>
+          <span class="globe-tag" style="--a: 300deg;">Wellbeing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section landing-section surface-band" id="events">
+    <div class="container">
+      <p class="section-eyebrow reveal">Events</p>
+      <h2 class="title is-2 reveal">Workshops &amp; shared tasks</h2>
+      <div class="research-grid events-grid">
+        <div class="research-card reveal">
+          <span class="tag">Workshop &middot; AACL 2026</span>
+          <h3>The First Workshop on Multimodal, Multilingual, and Multicultural Mental Health and Psychotherapy</h3>
+          <p>Co-located with AACL 2026.</p>
+          <div class="card-status">Coming soon</div>
+        </div>
+        <a href="https://psydefdetect-shared-task.github.io" target="_blank" class="research-card reveal">
+          <span class="tag">Shared task &middot; BioNLP@ACL 2026</span>
+          <h3>PsyDefDetect Shared Task</h3>
+          <p>Detecting and classifying psychological defense mechanisms in emotional support dialogues, grounded in the clinically validated Defense Mechanism Rating Scales (DMRS) framework.</p>
+          <div class="card-arrow">Shared task page <i class="fas fa-arrow-right"></i></div>
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Projects -->
+  <section class="section landing-section" id="works">
+    <div class="container">
+      <p class="section-eyebrow reveal">Our works</p>
+      <h2 class="title is-2 reveal">Projects, datasets &amp; models</h2>
+      <div class="research-grid">
+        <div class="research-card reveal">
+          <span class="tag">Dataset &middot; Defense mechanisms</span>
+          <h3>PsyDefConv</h3>
+          <p>Psychological Defense Mechanisms in Supportive Conversations: a dialogue corpus with help-seeker utterances labeled for defense level, and DMRS Co-Pilot, a four-stage pipeline that provides evidence-based pre-annotations.</p>
+          <div class="card-actions">
+            <a href="https://arxiv.org/abs/2512.15601" target="_blank" class="card-arrow">Paper <i class="fas fa-arrow-right"></i></a>
+            <a href="https://huggingface.co/datasets/AIMH/PsyDefConv" target="_blank" class="card-arrow">Dataset <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <a href="SQPsych.html" class="research-card reveal">
+          <span class="tag">Synthetic dialogue &middot; Psychotherapy</span>
+          <h3>SQPsych: Structured Questionnaire-based Psychotherapy</h3>
+          <p>Roleplaying with Structure: Synthetic Therapist-Client Conversation Generation from Questionnaires, with the SQPsychConv corpora and SQPsychLLM models.</p>
+          <div class="card-arrow">Project page <i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="https://huggingface.co/datasets/AIMH/SWMH" target="_blank" class="research-card reveal">
+          <span class="tag">Dataset &middot; Social media</span>
+          <h3>SWMH Dataset</h3>
+          <p>Reddit SuicideWatch and Mental Health Collection: a comprehensive dataset collected from Reddit for mental health research.</p>
+          <div class="card-arrow">View on Hugging Face <i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="https://huggingface.co/collections/AIMH/encoder-only-models-677bea397f53311900e5dd7b" target="_blank" class="research-card reveal">
+          <span class="tag">Pretrained models</span>
+          <h3>MentalBERT</h3>
+          <p>Publicly available pretrained language models: a collection of encoder-only models pretrained for mental health applications.</p>
+          <div class="card-arrow">View on Hugging Face <i class="fas fa-arrow-right"></i></div>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contributors -->
+  <section class="section landing-section surface-band" id="contributors">
+    <div class="container">
+      <p class="section-eyebrow reveal">Contributors</p>
+      <h2 class="title is-2 reveal">The people behind AIMH</h2>
+      <p class="institutions reveal">
+        Our research community comprises researchers from diverse institutions worldwide, including the ELLIS Institute
+        Finland, University of Turku, University of Technology Sydney, Technical University of Darmstadt, Xi’an
+        Jiaotong-Liverpool University, and The University of Manchester, bringing expertise in AI, NLP, and mental health.
+      </p>
+      <div class="people-grid">
+        <a href="https://www.semanticscholar.org/author/Luna-Ansari/2135946025" target="_blank" class="person-card reveal">
+          <span class="person-name">Luna Ansari</span>
+          <span class="person-affil">Aalto University</span>
+        </a>
+        <a href="https://shaoxiongji.github.io" target="_blank" class="person-card reveal">
+          <span class="person-name">Shaoxiong Ji</span>
+          <span class="person-affil">ELLIS Institute Finland &amp; University of Turku</span>
+        </a>
+        <a href="https://hongbin-ze.github.io/" target="_blank" class="person-card reveal">
+          <span class="person-name">Hongbin Na</span>
+          <span class="person-affil">University of Technology Sydney</span>
+        </a>
+        <a href="https://long21wt.github.io/" target="_blank" class="person-card reveal">
+          <span class="person-name">Doan Nam Long Vu</span>
+          <span class="person-affil">Technical University of Darmstadt</span>
+        </a>
+        <a href="https://www.zimuwang.net/" target="_blank" class="person-card reveal">
+          <span class="person-name">Zimu Wang</span>
+          <span class="person-affil">Xi’an Jiaotong-Liverpool University</span>
+        </a>
+        <a href="https://stevekgyang.github.io/" target="_blank" class="person-card reveal">
+          <span class="person-name">Kailai Yang</span>
+          <span class="person-affil">The University of Manchester</span>
+        </a>
+      </div>
+      <p class="people-note reveal">* Contributors are listed in alphabetical order by last name.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+  <!-- Community -->
+  <section class="section landing-section">
+    <div class="container">
+      <div class="join-band reveal">
+        <div>
+          <h2 class="title is-2">Join our community.</h2>
+          <p>We are always looking for passionate researchers and collaborators. Whether you are interested in AI, NLP, clinical psychology, or computational psychiatry, come say hi!</p>
+        </div>
+        <div class="join-actions">
+          <a href="https://discord.gg/AhuspeXNkM" target="_blank" class="cta-button cta-discord"><i class="fab fa-discord"></i>&nbsp; Join Discord</a>
+          <a href="https://huggingface.co/AIMH" target="_blank" class="cta-button cta-hf"><span aria-hidden="true">🤗</span>&nbsp; Models &amp; data</a>
+          <a href="https://github.com/AI-MH" target="_blank" class="cta-button cta-github"><i class="fab fa-github"></i>&nbsp; Code</a>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <a href="index.html" class="site-footer-brand">
+        <img src="static/images/logos/aimh.png" alt="AIMH logo">
+        <span><strong>AIMH</strong><span>AI for Mental Health</span></span>
+      </a>
+      <div class="site-footer-links">
+        <a href="SQPsych.html">SQPsych</a>
+        <a href="https://github.com/AI-MH" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://huggingface.co/AIMH" target="_blank">🤗 Hugging Face</a>
+        <a href="https://discord.gg/AhuspeXNkM" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+      </div>
+    </div>
+    <div class="site-footer-base">&copy; 2026 AIMH &middot; Built on the <a href="https://github.com/MaLA-LM/mala-lm.github.io" target="_blank">MaLA-LM</a> theme and the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> &middot; Licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></div>
+  </footer>
 
 </body>
+
 </html>

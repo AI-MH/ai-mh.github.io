@@ -1,0 +1,30 @@
+# AIMH
+
+> AIMH (AI for Mental Health) is a research community using AI to empower mental health. Its work spans natural language processing and broader AI methods, and it releases open datasets, language models and shared tasks grounded in clinical practice.
+
+Key facts:
+
+- Models and datasets are on Hugging Face (https://huggingface.co/AIMH); code is on GitHub (https://github.com/AI-MH).
+- Contributors come from the ELLIS Institute Finland, University of Turku, Aalto University, University of Technology Sydney, Technical University of Darmstadt, Xi'an Jiaotong-Liverpool University and The University of Manchester.
+
+## Pages
+
+- [Home](https://ai-mh.github.io/): mission, events, projects and contributors
+- [SQPsych](https://ai-mh.github.io/SQPsych.html): Roleplaying with Structure: Synthetic Therapist-Client Conversation Generation from Questionnaires (arXiv 2510.25384), with the SQPsychConv datasets and SQPsychLLM models
+
+## Events
+
+- The First Workshop on Multimodal, Multilingual, and Multicultural Mental Health and Psychotherapy, co-located with AACL 2026
+- [PsyDefDetect Shared Task](https://psydefdetect-shared-task.github.io): detecting and classifying psychological defense mechanisms in emotional support dialogues (DMRS framework), co-located with BioNLP@ACL 2026
+
+## Projects
+
+- [PsyDefConv](https://arxiv.org/abs/2512.15601): dialogue corpus with help-seeker utterances labeled for defense level, plus the DMRS Co-Pilot annotation pipeline ([dataset](https://huggingface.co/datasets/AIMH/PsyDefConv))
+- [SQPsych](https://ai-mh.github.io/SQPsych.html): synthetic therapist-client conversations generated from structured client profiles and psychological questionnaires
+- [SWMH](https://huggingface.co/datasets/AIMH/SWMH): Reddit SuicideWatch and Mental Health Collection
+- [MentalBERT](https://huggingface.co/collections/AIMH/encoder-only-models-677bea397f53311900e5dd7b): encoder-only language models pretrained for mental health applications
+
+## Optional
+
+- [Discord community](https://discord.gg/AhuspeXNkM)
+- [Omni Language AI Research](https://olaresearch.org)
