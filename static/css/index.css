@@ -38,12 +38,162 @@
   --paper-fg: #8a2f1c;
   --paper-border: #ead0c7;
 
+  /* Surfaces and inks that used to be hard-coded (light values unchanged) */
+  --on-accent: #ffffff;
+  --nav-bg: rgba(253, 252, 249, 0.85);
+  --nav-menu-bg: rgba(253, 252, 249, 0.98);
+  --code-bg: #f3efe9;
+  --row-alt-bg: #fcfbf8;
+  --figure-bg: #ffffff;          /* figures stay on paper in both themes */
+  --btn-secondary-bg: rgba(255, 255, 255, 0.6);
+  --link-rule: rgba(179, 147, 113, 0.4);
+  --ola-bg: #eef0f5;
+  --ola-bg-hover: #e3e7ef;
+  --ola-fg: #13243f;
+  --ola-border: #d3d8e3;
+
+  color-scheme: light;
+
   --font-serif: 'Castoro', 'Georgia', serif;
   --font-sans: 'Inter', 'Noto Sans', -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* Night theme
+   Warm charcoal (as on olaresearch.github.io), keeping the earth/sage palette
+   lifted for contrast. Follows the OS setting unless the visitor picked a
+   theme with the navbar toggle (static/js/theme.js sets data-theme on <html>).
+   The token list is repeated because one selector cannot cover both cases. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-color: #161513;
+    --text-primary: #ebe6dd;
+    --text-secondary: #a59f95;
+    --accent-earth: #c9a77f;
+    --accent-earth-dark: #d9bc98;
+    --accent-sage: #9aab96;
+    --surface-color: #1e1c19;
+    --surface-muted: #23201c;
+    --border-color: #34302a;
+
+    --gh-bg: #23252a;
+    --gh-bg-hover: #2c2f35;
+    --gh-fg: #e6e8eb;
+    --gh-border: #3a3d44;
+    --hf-bg: #2d2510;
+    --hf-bg-hover: #3a3015;
+    --hf-fg: #f5d06a;
+    --hf-border: #574618;
+    --portal-bg: #1e281d;
+    --portal-bg-hover: #263325;
+    --portal-fg: #b7cbb3;
+    --portal-border: #384a36;
+    --discord-bg: #1e2040;
+    --discord-bg-hover: #272a52;
+    --discord-fg: #bcc1fa;
+    --discord-border: #3a3f7a;
+    --paper-bg: #33201b;
+    --paper-bg-hover: #422a23;
+    --paper-fg: #f0b4a3;
+    --paper-border: #5a3529;
+
+    --on-accent: #161513;
+    --nav-bg: rgba(22, 21, 19, 0.85);
+    --nav-menu-bg: rgba(22, 21, 19, 0.98);
+    --code-bg: #2a2722;
+    --row-alt-bg: #211f1b;
+    --figure-bg: #f4f1ea;
+    --btn-secondary-bg: rgba(30, 28, 25, 0.6);
+    --link-rule: rgba(201, 167, 127, 0.45);
+    --ola-bg: #1c2333;
+    --ola-bg-hover: #242d42;
+    --ola-fg: #c9d4ea;
+    --ola-border: #34405a;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #161513;
+  --text-primary: #ebe6dd;
+  --text-secondary: #a59f95;
+  --accent-earth: #c9a77f;
+  --accent-earth-dark: #d9bc98;
+  --accent-sage: #9aab96;
+  --surface-color: #1e1c19;
+  --surface-muted: #23201c;
+  --border-color: #34302a;
+
+  --gh-bg: #23252a;
+  --gh-bg-hover: #2c2f35;
+  --gh-fg: #e6e8eb;
+  --gh-border: #3a3d44;
+  --hf-bg: #2d2510;
+  --hf-bg-hover: #3a3015;
+  --hf-fg: #f5d06a;
+  --hf-border: #574618;
+  --portal-bg: #1e281d;
+  --portal-bg-hover: #263325;
+  --portal-fg: #b7cbb3;
+  --portal-border: #384a36;
+  --discord-bg: #1e2040;
+  --discord-bg-hover: #272a52;
+  --discord-fg: #bcc1fa;
+  --discord-border: #3a3f7a;
+  --paper-bg: #33201b;
+  --paper-bg-hover: #422a23;
+  --paper-fg: #f0b4a3;
+  --paper-border: #5a3529;
+
+  --on-accent: #161513;
+  --nav-bg: rgba(22, 21, 19, 0.85);
+  --nav-menu-bg: rgba(22, 21, 19, 0.98);
+  --code-bg: #2a2722;
+  --row-alt-bg: #211f1b;
+  --figure-bg: #f4f1ea;
+  --btn-secondary-bg: rgba(30, 28, 25, 0.6);
+  --link-rule: rgba(201, 167, 127, 0.45);
+  --ola-bg: #1c2333;
+  --ola-bg-hover: #242d42;
+  --ola-fg: #c9d4ea;
+  --ola-border: #34405a;
+
+  color-scheme: dark;
+}
+
+/* Theme toggle (injected into the navbar by theme.js) */
+.theme-toggle {
+  flex: 0 0 auto;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  order: 3;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.theme-toggle:hover { color: var(--accent-earth); border-color: var(--accent-earth); }
+.theme-toggle svg { width: 1rem; height: 1rem; }
+.site-nav-brand { margin-right: auto; }
+.site-nav-menu { order: 2; }
+.site-nav-burger { order: 4; }
+/* Show the icon of the theme you would switch to */
+.theme-toggle .icon-sun { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 html {
   background-color: var(--bg-color);
@@ -119,7 +269,7 @@ a:hover { color: var(--accent-sage); }
 .caption a {
   color: var(--accent-earth-dark) !important;
   text-decoration: underline;
-  text-decoration-color: rgba(179, 147, 113, 0.4);
+  text-decoration-color: var(--link-rule);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
@@ -136,7 +286,7 @@ a:hover { color: var(--accent-sage); }
 .content .title a:not(.button) {
   color: inherit !important;
   text-decoration: none;
-  border-bottom: 1px solid rgba(179, 147, 113, 0.4);
+  border-bottom: 1px solid var(--link-rule);
 }
 
 a:focus-visible,
@@ -148,7 +298,7 @@ button:focus-visible {
 
 /* Site navigation */
 .site-nav {
-  background: rgba(253, 252, 249, 0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -308,7 +458,7 @@ button:focus-visible {
   height: 60vw;
   max-width: 900px;
   max-height: 900px;
-  background: radial-gradient(circle, rgba(179, 147, 113, 0.13) 0%, rgba(253, 252, 249, 0) 70%);
+  background: radial-gradient(circle, rgba(179, 147, 113, 0.13) 0%, transparent 70%);
   border-radius: 50%;
   z-index: 0;
   pointer-events: none;
@@ -484,7 +634,7 @@ button:focus-visible {
 .content code, code {
   font-family: var(--font-mono);
   font-size: 0.85em;
-  background: #f3efe9;
+  background: var(--code-bg);
   color: var(--text-primary);
   padding: 0.15em 0.4em;
   border-radius: 4px;
@@ -532,8 +682,8 @@ pre code, .content pre code {
   transition: var(--transition-smooth);
 }
 
-.copy-button:hover { background: var(--accent-earth); color: #fff; }
-.copy-button.copied { background: var(--accent-sage); color: #fff; }
+.copy-button:hover { background: var(--accent-earth); color: var(--on-accent); }
+.copy-button.copied { background: var(--accent-sage); color: var(--on-accent); }
 
 /* Tables
    Covers Bulma tables and the bare tables some pages style inline. */
@@ -607,7 +757,7 @@ pre code, .content pre code {
 
 .section table tbody tr:nth-child(even),
 .content table tbody tr:nth-child(even),
-.table.is-striped tbody tr:not(.is-selected):nth-child(even) { background-color: #fcfbf8; }
+.table.is-striped tbody tr:not(.is-selected):nth-child(even) { background-color: var(--row-alt-bg); }
 
 .section table tbody tr:hover,
 .content table tbody tr:hover,
@@ -628,7 +778,7 @@ pre code, .content pre code {
   height: auto;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  background: #fff;
+  background: var(--figure-bg);
 }
 
 .caption,
@@ -772,7 +922,7 @@ p a:not([class]),
 li a:not([class]) {
   color: var(--accent-earth-dark);
   text-decoration: underline;
-  text-decoration-color: rgba(179, 147, 113, 0.4);
+  text-decoration-color: var(--link-rule);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
@@ -797,9 +947,9 @@ li a:not([class]):hover {
 }
 
 .btn-primary { background: var(--text-primary); color: var(--surface-color); border: 1px solid var(--text-primary); }
-.btn-primary:hover { background: var(--accent-earth); border-color: var(--accent-earth); color: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(179, 147, 113, 0.25); }
+.btn-primary:hover { background: var(--accent-earth); border-color: var(--accent-earth); color: var(--on-accent); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(179, 147, 113, 0.25); }
 
-.btn-secondary { border: 1px solid var(--border-color); color: var(--text-primary); background: rgba(255, 255, 255, 0.6); }
+.btn-secondary { border: 1px solid var(--border-color); color: var(--text-primary); background: var(--btn-secondary-bg); }
 .btn-secondary:hover { border-color: var(--text-primary); background: var(--surface-color); color: var(--text-primary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04); }
 
 .cta-button {
@@ -857,7 +1007,7 @@ li a:not([class]):hover {
   height: 62vw;
   max-width: 980px;
   max-height: 980px;
-  background: radial-gradient(circle, rgba(179, 147, 113, 0.16) 0%, rgba(253, 252, 249, 0) 68%);
+  background: radial-gradient(circle, rgba(179, 147, 113, 0.16) 0%, transparent 68%);
   animation: drift 18s ease-in-out infinite alternate;
 }
 
@@ -868,7 +1018,7 @@ li a:not([class]):hover {
   height: 50vw;
   max-width: 760px;
   max-height: 760px;
-  background: radial-gradient(circle, rgba(117, 130, 115, 0.13) 0%, rgba(253, 252, 249, 0) 70%);
+  background: radial-gradient(circle, rgba(117, 130, 115, 0.13) 0%, transparent 70%);
   animation: drift 22s ease-in-out infinite alternate-reverse;
 }
 
@@ -1399,7 +1549,7 @@ li a:not([class]):hover {
 }
 
 .filter-pill:hover { border-color: var(--accent-earth); color: var(--accent-earth); }
-.filter-pill.active { background-color: var(--accent-earth); border-color: var(--accent-earth); color: #fff; }
+.filter-pill.active { background-color: var(--accent-earth); border-color: var(--accent-earth); color: var(--on-accent); }
 
 .pubs-empty { text-align: center; color: var(--text-secondary); font-style: italic; }
 
@@ -1486,7 +1636,7 @@ li a:not([class]):hover {
 }
 
 .action-btn:hover { border-color: var(--accent-earth); color: var(--accent-earth); background-color: rgba(179, 147, 113, 0.04); }
-.bibtex-toggle-btn.active { background-color: var(--accent-earth); color: #fff; border-color: var(--accent-earth); }
+.bibtex-toggle-btn.active { background-color: var(--accent-earth); color: var(--on-accent); border-color: var(--accent-earth); }
 
 .bibtex-box {
   flex: 1 1 100%;
@@ -1537,7 +1687,7 @@ li a:not([class]):hover {
     align-items: flex-start;
     gap: 1.25rem;
     padding: 1.5rem 1.25rem 1.75rem;
-    background: rgba(253, 252, 249, 0.98);
+    background: var(--nav-menu-bg);
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
   }
@@ -1603,8 +1753,8 @@ li a:not([class]):hover {
 .site-nav-logo { width: 38px; height: 38px; }
 
 /* Omni Language AI Research: navy and gold, taken from the OLA logo */
-.cta-ola { background: #eef0f5; color: #13243f; border-color: #d3d8e3; }
-.cta-ola:hover { background: #e3e7ef; color: #13243f; }
+.cta-ola { background: var(--ola-bg); color: var(--ola-fg); border-color: var(--ola-border); }
+.cta-ola:hover { background: var(--ola-bg-hover); color: var(--ola-fg); }
 .cta-logo { width: 18px; height: 18px; object-fit: contain; margin-right: 0.5rem; border-radius: 3px; }
 
 /* Room for the longer phrases the teaser cycles through */
